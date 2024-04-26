@@ -4,7 +4,7 @@
 ## Module 1: How to install Airflow on Docker | Setting Up Airflow with Docker-Compose in 3 Minutes
 - Download docker and install [Docker](https://www.docker.com/products/docker-desktop/)
 - Create a folder and inside the folder create .env and docker-compose.yml files
-- copy and paste the .env dan docker-compose.yml
+- Copy and paste the .env dan docker-compose.yml
 - Open your terminal, type pip ```docker-compose up -d```, and press enter.
 
 ## Module 2: *comingsoon
