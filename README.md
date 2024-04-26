@@ -7,15 +7,12 @@
 - copy and paste the .env dan docker-compose.yml
 - Open your terminal, type pip ```docker-compose up -d```, and press enter.
 
-
-
-
-
+## Module 2: *comingsoon
 - Database Configuration
 ```
   - host: localhost
-  - port: 5432
-  - user: root
-  - password: root123
-  - database: devel
+  - port: 5434
+  - user: airflow
+  - password: airflow
+  - database: 
 ```
