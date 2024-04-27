@@ -19,7 +19,7 @@
   ```
   - Press ```CMD + K``` or ``` CTRL + K ``` or icon database on top
   - Create "New" we will create two databases, namely master_db and warehouse_db.
-  - Create table in master_db:
+  - Create a table in master_db:
     ```
     CREATE TABLE trips (
     VendorID INT,
