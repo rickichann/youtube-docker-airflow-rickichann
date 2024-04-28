@@ -60,6 +60,11 @@
   - Copy and paste this file nyc_ingestion.py and run the code.
  
 - Create a PostgreSQL connection in Airflow:
-  - Click Admin >> Connections >> Add a new record >>
-  - The database configuration connection is in the database connections section above
+  - Click Admin >> Connections >> Add a new record >> The database configuration connection is in the database connections section above
+
+- Create a pipeline in airflow:
+  - Open dags folder, create a python file "etl-taxi-trips-agg.py"
+  - copy paste or rewrite code on github.
+ 
+
     
