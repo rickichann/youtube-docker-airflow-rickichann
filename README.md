@@ -45,9 +45,11 @@
 
     ```
   - ```
-
-
-
+    CREATE TABLE taxi_trips_agg (
+        year_date    DATE,
+        total_amount FLOAT,
+        type_taxi    VARCHAR(255)
+    );
 
     ```
 
