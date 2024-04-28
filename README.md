@@ -18,32 +18,37 @@
     - database: 
   ```
   - Press ```CMD + K``` or ``` CTRL + K ``` or icon database on top
-  - Create "New" we will create two databases, namely master_db and warehouse_db.
-  - Create a table in master_db:
+  - There are 4 database options, choose Postgres.
+  - Create two tables to store data: one for storing raw data rows, and another one to store aggregated data (data after processing):
     ```
     CREATE TABLE trips (
-    VendorID INT,
-    tpep_pickup_datetime TIMESTAMP,
-    tpep_dropoff_datetime TIMESTAMP,
-    passenger_count FLOAT,
-    trip_distance FLOAT,
-    RatecodeID FLOAT,
-    store_and_fwd_flag VARCHAR,
-    PULocationID INT,
-    DOLocationID INT,
-    payment_type BIGINT,
-    fare_amount FLOAT,
-    extra FLOAT,
-    mta_tax FLOAT,
-    tip_amount FLOAT,
-    tolls_amount FLOAT,
-    improvement_surcharge FLOAT,
-    total_amount FLOAT,
-    congestion_surcharge FLOAT,
-    Airport_fee FLOAT
+          VendorID INT,
+          tpep_pickup_datetime TIMESTAMP,
+          tpep_dropoff_datetime TIMESTAMP,
+          passenger_count FLOAT,
+          trip_distance FLOAT,
+          RatecodeID FLOAT,
+          store_and_fwd_flag VARCHAR,
+          PULocationID INT,
+          DOLocationID INT,
+          payment_type BIGINT,
+          fare_amount FLOAT,
+          extra FLOAT,
+          mta_tax FLOAT,
+          tip_amount FLOAT,
+          tolls_amount FLOAT,
+          improvement_surcharge FLOAT,
+          total_amount FLOAT,
+          congestion_surcharge FLOAT,
+          Airport_fee FLOAT
     );
     ```
-  - ff
+  - ```
+
+
+
+
+    ```
 
 
 - Insert data into PostgreSQL
