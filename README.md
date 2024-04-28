@@ -21,27 +21,28 @@
   - There are 4 database options, choose Postgres.
   - Create two tables to store data: one for storing raw data rows, and another one to store aggregated data (data after processing):
     ```
-    CREATE TABLE trips (
-          VendorID INT,
-          tpep_pickup_datetime TIMESTAMP,
-          tpep_dropoff_datetime TIMESTAMP,
-          passenger_count FLOAT,
-          trip_distance FLOAT,
-          RatecodeID FLOAT,
-          store_and_fwd_flag VARCHAR,
-          PULocationID INT,
-          DOLocationID INT,
-          payment_type BIGINT,
-          fare_amount FLOAT,
-          extra FLOAT,
-          mta_tax FLOAT,
-          tip_amount FLOAT,
-          tolls_amount FLOAT,
-          improvement_surcharge FLOAT,
-          total_amount FLOAT,
-          congestion_surcharge FLOAT,
-          Airport_fee FLOAT
+    CREATE TABLE taxi_trips (
+        VendorID               INT,
+        tpep_pickup_datetime   TIMESTAMP,
+        tpep_dropoff_datetime  TIMESTAMP,
+        passenger_count        FLOAT,
+        trip_distance          FLOAT,
+        RatecodeID             FLOAT,
+        store_and_fwd_flag     VARCHAR(1),
+        PULocationID           INT,
+        DOLocationID           INT,
+        payment_type           BIGINT,
+        fare_amount            FLOAT,
+        extra                  FLOAT,
+        mta_tax                FLOAT,
+        tip_amount             FLOAT,
+        tolls_amount           FLOAT,
+        improvement_surcharge  FLOAT,
+        total_amount           FLOAT,
+        congestion_surcharge   FLOAT,
+        Airport_fee            FLOAT
     );
+
     ```
   - ```
 
@@ -51,8 +52,12 @@
     ```
 
 
-- Insert data into PostgreSQL
+- Insert data into PostgreSQL:
   - Open your terminal, type ``jupyter notebook`` If you haven't installed it yet, you can see it in this tutorial [Jupyter Notebook](https://www.youtube.com/watch?v=ENApxFALR7M).
   - Create new .ipynb file
   - Copy and paste this file nyc_ingestion.py and run the code.
+ 
+- Create a PostgreSQL connection in Airflow:
+  - Click Admin >> Connections >> Add a new record >>
+  - The database configuration connection is in the database connections section above
     
