@@ -64,7 +64,7 @@
 
 - Create a pipeline in airflow:
   - Open dags folder, create a python file "etl-taxi-trips-agg.py"
-  - copy paste or rewrite code on github.
+  - copy and paste or rewrite code on github.
  
 
     
