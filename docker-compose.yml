@@ -1,4 +1,5 @@
 version: '3.4'
+
 x-common:
   &common
   image: apache/airflow:latest
@@ -31,6 +32,8 @@ services:
       retries: 5
     env_file:
       - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Persist PostgreSQL data
 
   scheduler:
     <<: [*common, *depends-on]
@@ -63,4 +66,6 @@ services:
         mkdir -p /sources/logs /sources/dags /sources/plugins
         chown -R "${AIRFLOW_UID}:0" /sources/{logs,dags,plugins}
         exec /entrypoint airflow version
-        
+
+volumes:
+  postgres_data: 
