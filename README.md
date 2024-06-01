@@ -9,4 +9,4 @@
 
 
 ## Module 2: How to connect Airflow to PostgreSQL
-- [Click >>](https://www.youtube.com/watch?v=SfgTTbwzaGo&t=24s)
+- [How to connect Airflow to PostgreSQL](https://www.youtube.com/watch?v=SfgTTbwzaGo&t=24s)
