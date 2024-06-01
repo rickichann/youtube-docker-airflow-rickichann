@@ -6,3 +6,7 @@
 - Copy and paste the .env dan docker-compose.yml
 - Open your terminal, type pip ```docker-compose up -d```, and press enter.
 - To stop Docker, use "docker compose down".
+
+
+## Module 2: How to connect Airflow to PostgreSQL
+- [Click >>](https://www.youtube.com/watch?v=SfgTTbwzaGo&t=24s)
